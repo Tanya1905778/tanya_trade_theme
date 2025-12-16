@@ -1,0 +1,24 @@
+<div>
+    <h1>{{ section.settings.text_1 }}</h1>
+</div>
+<style></style>
+{% schema %}
+{
+  "name": "My First Section",
+  "tag": "section",
+  "class": "my-first-section",
+  "settings": [
+    {
+        "type": "text",
+        "id": "text_1",
+        "label": "Text heading",
+        "default": "Default text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "My Section"
+    }
+  ]
+}
+{% endschema %}
